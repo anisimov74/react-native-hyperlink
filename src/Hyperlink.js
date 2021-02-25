@@ -5,7 +5,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-	View,
 	Text,
 	Linking,
 	Platform
@@ -31,11 +30,11 @@ class Hyperlink extends Component {
     delete viewProps.linkStyle
 
     return (
-      <View { ...viewProps } style={ this.props.style }>
+      <Text { ...viewProps } style={ this.props.style }>
         { !this.props.onPress && !this.props.onLongPress && !this.props.linkStyle
           ? this.props.children
           : this.parse(this).props.children }
-      </View>
+      </Text>
     )
   }
 
