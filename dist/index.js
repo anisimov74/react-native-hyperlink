@@ -148,7 +148,7 @@ function (_Component) {
       delete viewProps.linkDefault;
       delete viewProps.onLongPress;
       delete viewProps.linkStyle;
-      return _react["default"].createElement(_reactNative.View, _extends({}, viewProps, {
+      return _react["default"].createElement(_reactNative.Text, _extends({}, viewProps, {
         style: this.props.style
       }), !this.props.onPress && !this.props.onLongPress && !this.props.linkStyle ? this.props.children : this.parse(this).props.children);
     }
